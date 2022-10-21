@@ -34,6 +34,16 @@ One can use Proxmox to host a test VM shown [here.](docs/Proxmox-VE-test-host.md
 ansible all -m ping
 ```
 
+Run a `bootstrap` against the test host:
+
+```shell
+ansible-playbook collections/ansible_collections/nfaction/bootstrap/playbooks/bootstrap.yml
+
+# OR
+
+ansible-playbook playbooks/bootstrap.yml
+```
+
 ## References
 
 * [Ansible Setup](docs/Ansible-setup.md)
