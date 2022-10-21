@@ -1,0 +1,12 @@
+---
+
+roles:
+  - src: lean_delivery.docker
+    name: docker
+
+collections:
+  - name: git@github.com:nfaction/ansible-collection-bootstrap.git
+    type: git
+    version: master
+  - ansible.posix
+  - name: community.general
